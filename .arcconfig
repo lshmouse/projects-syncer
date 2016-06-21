@@ -1,5 +1,5 @@
 {
-    "project_id" : "sync-community",
-    "conduit_uri" : "https://phabricator.d.xiaomi.net/",
+    "project_id" : "projects-syncer",
+    "conduit_uri" : "https://phabricator.d.xiaomi.net/"
 }
 
