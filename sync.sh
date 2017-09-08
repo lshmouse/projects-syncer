@@ -8,6 +8,8 @@ init_project() {
   git clone $local_repo $project_home
 }
 
+DATA_DIR=${SYNCER_DATA_DIR:-".projects"}
+
 sync() {
   cd $project_home
   git checkout .
@@ -39,7 +41,7 @@ fi
 
 config=$1
 . $config
-project_home=.projects/$project
+project_home=$DATA_DIR/$project
 if [ ! -d $project_home ]; then
   init_project
 fi
