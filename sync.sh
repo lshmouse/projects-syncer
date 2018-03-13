@@ -18,11 +18,11 @@ sync() {
   git checkout $default_branch
   git remote set-url origin $remote_repo
   git pull
+  git fetch --tags
   for branch in ${branches[@]};
   do
     git checkout -b $branch origin/$branch
   done
-
   git checkout $default_branch
   git remote set-url origin $local_repo
   git push --all
