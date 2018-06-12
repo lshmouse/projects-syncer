@@ -25,7 +25,10 @@ sync() {
   done
   git checkout $default_branch
   git remote set-url origin $local_repo
-  git push --all
+  for branch in ${branches[@]};
+  do
+    git push origin $branch
+  done
   git push --tags
   for branch in ${branches[@]};
   do
