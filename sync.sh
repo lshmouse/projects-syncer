@@ -29,7 +29,7 @@ sync() {
   do
     git push origin $branch
   done
-  git push --tags
+  git push --tags --force
   for branch in ${branches[@]};
   do
     git branch -D $branch
