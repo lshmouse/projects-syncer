@@ -15,7 +15,7 @@ For an example, see the configs/zookeeper.cfg
 ```
 project=zookeeper
 local_repo="git@git.n.xiaomi.com:infra/zookeeper.git"
-remote_repo="git://git.apache.org/zookeeper.git"
+remote_repo="git@github.com:apache/zookeeper.git"
 branches=(trunk branch-3.4 branch-3.5)
 default_branch=trunk
 ```
